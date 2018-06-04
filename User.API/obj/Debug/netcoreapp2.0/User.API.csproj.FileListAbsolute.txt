@@ -1,0 +1,11 @@
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\bin\Debug\netcoreapp2.0\User.API.deps.json
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\bin\Debug\netcoreapp2.0\User.API.runtimeconfig.json
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\bin\Debug\netcoreapp2.0\User.API.runtimeconfig.dev.json
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\bin\Debug\netcoreapp2.0\User.API.dll
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\obj\Debug\netcoreapp2.0\User.API.csprojResolveAssemblyReference.cache
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\obj\Debug\netcoreapp2.0\User.API.csproj.CoreCompileInputs.cache
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\obj\Debug\netcoreapp2.0\User.API.AssemblyInfoInputs.cache
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\obj\Debug\netcoreapp2.0\User.API.AssemblyInfo.cs
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\bin\Debug\netcoreapp2.0\User.Identity.dll
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\bin\Debug\netcoreapp2.0\User.Identity.pdb
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\obj\Debug\netcoreapp2.0\User.API.csproj.CopyComplete
