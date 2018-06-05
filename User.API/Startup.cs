@@ -46,6 +46,7 @@ namespace User.API
             }
             app.UseMvc();
             UserContextSeed.SeedAsync(app, loggerFactory, 0).Wait();
+            //add remote
         }
     }
 }
