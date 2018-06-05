@@ -10,3 +10,10 @@ D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API.UnitTes
 D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API.UnitTests\obj\Debug\netcoreapp2.0\User.API.UnitTests.AssemblyInfoInputs.cache
 D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API.UnitTests\obj\Debug\netcoreapp2.0\User.API.UnitTests.AssemblyInfo.cs
 D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API.UnitTests\bin\Debug\netcoreapp2.0\User.API.dll
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API.UnitTests\bin\Debug\netcoreapp2.0\User.API.UnitTests.pdb
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API.UnitTests\bin\Debug\netcoreapp2.0\User.Identity.dll
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API.UnitTests\bin\Debug\netcoreapp2.0\User.API.pdb
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API.UnitTests\bin\Debug\netcoreapp2.0\User.Identity.pdb
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API.UnitTests\obj\Debug\netcoreapp2.0\User.API.UnitTests.csproj.CopyComplete
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API.UnitTests\obj\Debug\netcoreapp2.0\User.API.UnitTests.dll
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API.UnitTests\obj\Debug\netcoreapp2.0\User.API.UnitTests.pdb

@@ -28,7 +28,11 @@ namespace User.Identity
         {
             services.AddMvc();
             services.AddIdentityServer()
-                .AddExtensionGrantValidator<SmsAuthCodeGrantType>();  //identityserver 认证
+                .AddExtensionGrantValidator<SmsAuthCodeGrantType>()
+                .AddDeveloperSigningCredential()
+                .AddInMemoryClients(Config.GetClients())
+                .AddInMemoryIdentityResources(Config.GetIdentityResources())
+                .AddInMemoryApiResources(Config.GetApiResources());  //identityserver 认证
 
             services.AddScoped<IAuthCodeService, TestAuthCodeService>()
                 .AddScoped<IUserService, UserService>();
@@ -42,7 +46,7 @@ namespace User.Identity
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseIdentityServer();
             app.UseMvc();
         }
     }

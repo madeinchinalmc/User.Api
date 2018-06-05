@@ -9,3 +9,6 @@ D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\obj\Deb
 D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\bin\Debug\netcoreapp2.0\User.Identity.dll
 D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\bin\Debug\netcoreapp2.0\User.Identity.pdb
 D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\obj\Debug\netcoreapp2.0\User.API.csproj.CopyComplete
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\bin\Debug\netcoreapp2.0\User.API.pdb
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\obj\Debug\netcoreapp2.0\User.API.dll
+D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.API\obj\Debug\netcoreapp2.0\User.API.pdb
