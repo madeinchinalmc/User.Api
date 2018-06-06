@@ -17,6 +17,15 @@ namespace Gateway.API
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            var authenticationProviderKey = "findbook";
+            services.AddAuthentication()
+                .AddIdentityServerAuthentication(authenticationProviderKey, options => {
+                    options.Authority = "http://localhost:19937";
+                    options.ApiName = "gateway_api";
+                    options.SupportedTokens = IdentityServer4.AccessTokenValidation.SupportedTokens.Both;
+                    options.ApiSecret = "secret";
+                    options.RequireHttpsMetadata = false;
+                });
             services.AddOcelot();
         }
 
