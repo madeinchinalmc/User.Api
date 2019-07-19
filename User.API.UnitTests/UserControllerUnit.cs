@@ -33,15 +33,14 @@ namespace User.API.UnitTests
 
             //loggerMoq.Setup(t =>t.LogError("自定义错误",new object[] { })); //自定义配置
             var logger = loggerMoq.Object;
-            return  (UserController: new UserController(context, logger), UserContext: context) ;
+            return (new UserController(context, logger), context);
         }
         //方法 返回结果 期待
         [Fact]
         public async Task Get_ReturnRightUser_WithExpectedParameters()
         {
             var controller = GetUserController();
-            var response = await controller.Item1 .Get();
-
+            var response = await controller.Item1.Get();
             //Assert.IsType<JsonResult>(response.GetType());
             var result = response.Should().BeOfType<JsonResult>().Subject;
             var appUser = result.Value.Should().BeAssignableTo<Model.AppUser>().Subject;
@@ -55,7 +54,7 @@ namespace User.API.UnitTests
             var document = new JsonPatchDocument<Model.AppUser>();
             document.Add(user => user.Name, "liu");
             document.Replace(u => u.Name, "liu");
-            var response =await controller.Item1.Patch(document);
+            var response = await controller.Item1.Patch(document);
             var result = response.Should().BeOfType<JsonResult>().Subject;
 
             //assert reponse
@@ -63,7 +62,7 @@ namespace User.API.UnitTests
             appUser.Name.Should().Be("liu");
 
             //assert name value in ef context
-            var userModel =await controller.Item2.Users.SingleOrDefaultAsync(u => u.Id == 1);
+            var userModel = await controller.Item2.Users.SingleOrDefaultAsync(u => u.Id == 1);
             userModel.Should().NotBeNull();
             userModel.Name.Should().Be("liu");
         }
@@ -73,7 +72,7 @@ namespace User.API.UnitTests
         {
             var controller = GetUserController();
             var document = new JsonPatchDocument<Model.AppUser>();
-            document.Replace(u => u.userProperties,new List<Model.UserProperty> {
+            document.Replace(u => u.userProperties, new List<Model.UserProperty> {
                 new Model.UserProperty{Key="fin_industry",Value="互联网",Text="互联网"}
             });
             var response = await controller.Item1.Patch(document);
@@ -97,9 +96,10 @@ namespace User.API.UnitTests
         {
             var controller = GetUserController();
             var document = new JsonPatchDocument<Model.AppUser>();
-            document.Replace(u => u.userProperties, new List<Model.UserProperty> {
+            document.Replace(u => u.userProperties, new List<Model.UserProperty>
+            {
             });
-            var response = await controller.Item1.Patch(document); 
+            var response = await controller.Item1.Patch(document);
             var result = response.Should().BeOfType<JsonResult>().Subject;
 
             //assert reponse
@@ -108,7 +108,7 @@ namespace User.API.UnitTests
             appUser.userProperties.Should().BeEmpty();
 
             //assert name value in ef context
-            var userModel = await controller.Item2.Users.SingleOrDefaultAsync(u => u.Id == 1); 
+            var userModel = await controller.Item2.Users.SingleOrDefaultAsync(u => u.Id == 1);
             userModel.userProperties.Should().BeEmpty();
         }
     }

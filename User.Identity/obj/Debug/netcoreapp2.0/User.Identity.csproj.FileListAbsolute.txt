@@ -9,3 +9,14 @@ D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.Identity\ob
 D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.Identity\obj\Debug\netcoreapp2.0\User.Identity.AssemblyInfo.cs
 D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.Identity\obj\Debug\netcoreapp2.0\User.Identity.dll
 D:\Study\ProgramTestC#\ProjectApplicatoin\MicroService\User.API\User.Identity\obj\Debug\netcoreapp2.0\User.Identity.pdb
+D:\Study\DockerStudy\User.API\User.Identity\bin\Debug\netcoreapp2.0\User.Identity.deps.json
+D:\Study\DockerStudy\User.API\User.Identity\bin\Debug\netcoreapp2.0\User.Identity.runtimeconfig.json
+D:\Study\DockerStudy\User.API\User.Identity\bin\Debug\netcoreapp2.0\User.Identity.runtimeconfig.dev.json
+D:\Study\DockerStudy\User.API\User.Identity\bin\Debug\netcoreapp2.0\User.Identity.dll
+D:\Study\DockerStudy\User.API\User.Identity\bin\Debug\netcoreapp2.0\User.Identity.pdb
+D:\Study\DockerStudy\User.API\User.Identity\obj\Debug\netcoreapp2.0\User.Identity.csprojAssemblyReference.cache
+D:\Study\DockerStudy\User.API\User.Identity\obj\Debug\netcoreapp2.0\User.Identity.csproj.CoreCompileInputs.cache
+D:\Study\DockerStudy\User.API\User.Identity\obj\Debug\netcoreapp2.0\User.Identity.AssemblyInfoInputs.cache
+D:\Study\DockerStudy\User.API\User.Identity\obj\Debug\netcoreapp2.0\User.Identity.AssemblyInfo.cs
+D:\Study\DockerStudy\User.API\User.Identity\obj\Debug\netcoreapp2.0\User.Identity.dll
+D:\Study\DockerStudy\User.API\User.Identity\obj\Debug\netcoreapp2.0\User.Identity.pdb

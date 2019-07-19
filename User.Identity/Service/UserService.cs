@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using User.Identity.Dtos;
+using Newtonsoft.Json;
 
 namespace User.Identity.Service
 {
@@ -15,7 +17,7 @@ namespace User.Identity.Service
             _httpClient = httpClient;
         }
 
-        public async Task<int> CheckOrCreate(string phone)
+        public async Task<UserInfo> CheckOrCreate(string phone)
         {
             var from = new Dictionary<string, string>
             {
@@ -25,11 +27,13 @@ namespace User.Identity.Service
             var response = await _httpClient.PostAsync(_userServiceUrl + "/api/users/check-or-create", content);
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                var userId = await response.Content.ReadAsStringAsync();
-                int.TryParse(userId,out int UserIdInt);
-                return UserIdInt;
+                var result = await response.Content.ReadAsStringAsync();
+                var userinfo = JsonConvert.DeserializeObject<UserInfo>(result);
+
+                //int.TryParse(userId,out int UserIdInt);
+                return userinfo;
             }
-            return 0;
+            return null;
         }
     }
 }
