@@ -1,13 +1,14 @@
-{
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
   "profiles": {
-    "User.API": {
+    "Gateway.API": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",
+      "applicationUrl": "https://localhost:18002;",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "http://localhost:18000"
+      }
     }
   }
 }

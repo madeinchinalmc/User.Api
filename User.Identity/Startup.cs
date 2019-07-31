@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using DnsClient;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -10,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using User.Identity.Authentication;
+using User.Identity.Dtos;
 using User.Identity.Service;
 
 namespace User.Identity
@@ -28,11 +31,19 @@ namespace User.Identity
         {
             services.AddMvc();
             services.AddIdentityServer()
-                .AddExtensionGrantValidator<SmsAuthCodeGrantType>()
+                .AddExtensionGrantValidator<SmsAuthCodeGrantType>()  
                 .AddDeveloperSigningCredential()
                 .AddInMemoryClients(Config.GetClients())
                 .AddInMemoryIdentityResources(Config.GetIdentityResources())
                 .AddInMemoryApiResources(Config.GetApiResources());  //identityserver 认证
+
+
+            services.Configure<ServiceDiscoveryOptions>(Configuration.GetSection("UserServiceName"));
+            services.AddSingleton<IDnsQuery>(p =>
+            {
+                var serviceConfiguration = p.GetRequiredService<IOptions<ServiceDiscoveryOptions>>().Value;
+                return new LookupClient(serviceConfiguration.Consul.DnsEndpoint.ToIPEndPoint());
+            });
 
             services.AddScoped<IAuthCodeService, TestAuthCodeService>()
                 .AddScoped<IUserService, UserService>();

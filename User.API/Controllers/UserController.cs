@@ -23,7 +23,8 @@ namespace User.API.Controllers
             _logger = logger;
         }
         [HttpGet]
-        public async Task<IActionResult> Get() 
+        public async Task<IActionResult> Get()
+
         {
             var user = await _userContext.Set<AppUser>()
                 .AsNoTracking()

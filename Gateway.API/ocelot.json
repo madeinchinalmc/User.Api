@@ -1,12 +1,12 @@
-﻿{
-  "RerRoutes": [
+{
+  "ReRoutes": [
     {
       "DownstreamPathTemplate": "/api/users",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 50280
+          "Port": 18000
         }
       ],
       "UpstreamPathTemplate": "/users",
@@ -22,7 +22,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 19937
+          "Port": 18001
         }
       ],
       "UpstreamPathTemplate": "/connect/token",
@@ -30,6 +30,6 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:29644"
+    "BaseUrl": "http://localhost:18002"
   }
 }
