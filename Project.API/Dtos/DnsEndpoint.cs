@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace User.Identity.Dtos
+namespace Project.API.Dtos
 {
     public class DnsEndpoint
     {
